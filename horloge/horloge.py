@@ -8,7 +8,6 @@ mm = 12
 ss = 23
 
 
-#alarm_time = input("Enter time in 'HH:MM:SS AM/PM' format: ")
 def horloge():
     count = 0
     while True:
@@ -48,7 +47,7 @@ def afficher_heure():
                 hh = 0
 
 def setalarme():
-    alarm_time = input("Enter the time of alarm to be set:HH:MM:SS\n")
+    alarm_time = input("Entrez l'heure de l'alarme à régler : HH:MM:SS\n")
     alarm_hour=alarm_time[0:2]
     alarm_minute=alarm_time[3:5]
     alarm_seconds=alarm_time[6:8]
@@ -64,7 +63,7 @@ def setalarme():
             if(alarm_hour==current_hour):
                 if(alarm_minute==current_minute):
                     if(alarm_seconds==current_seconds):
-                        print("Wake Up!")
+                        print("Waky Waky!")
 
 
 arret = False
